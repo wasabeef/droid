@@ -19,7 +19,7 @@ struct Version {
 
 fn main() {
     let matches = App::new("droid")
-        .about("about")
+        .about("A command-line tool for checking Android OS version history.")
         .version(crate_version!())
         .author(crate_authors!())
         .after_help("https://github.com/wasabeef/droid")
@@ -106,7 +106,7 @@ fn body(versions: Vec<Version>) {
         print!("\n\n");
         table.printstd();
     }
-    println!("          {}", "https://en.wikipedia.org/wiki/Android_version_history");
-    println!("          {}", "https://developer.android.com/about/dashboards");
+    println!("https://en.wikipedia.org/wiki/Android_version_history");
+    println!("https://developer.android.com/about/dashboards");
     print!("\n\n");
 }
