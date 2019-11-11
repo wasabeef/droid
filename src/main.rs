@@ -90,8 +90,7 @@ fn code_names(number: String) {
 }
 
 fn read_versions() -> Vec<Version> {
-    // FIXME
-    let url = "https://gist.githubusercontent.com/wasabeef/3c57b14d1ae7ddd26d95efeef911dbe9/raw/000e2aad7d2a4f70e38272fe34e5f32f823efbd6/Android.json".to_string();
+    let url = "https://raw.githubusercontent.com/wasabeef/droid/master/resources/Android.json".to_string();
     reqwest::get(&url).unwrap().json().unwrap()
 }
 
