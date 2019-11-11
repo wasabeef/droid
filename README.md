@@ -29,7 +29,7 @@
 
 <p align="center">
   <br>
-  <img width="75%"　alt="droid with Hyper" src="https://rawcdn.githack.com/wasabeef/droid/7bc5f18646d3f9fd121cb5a5bde606207120fba4/media/demo.svg" >
+  <img width="85%"　alt="droid with Hyper" src="https://rawcdn.githack.com/wasabeef/droid/7bc5f18646d3f9fd121cb5a5bde606207120fba4/media/demo.svg" >
   <br>
   <br>
 </p>
