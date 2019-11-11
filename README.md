@@ -203,3 +203,10 @@
    +---------+----------------------------------+-----------+--------------+
 
    ```
+   
+<br />
+<br />
+<br />
+<br />
+
+ (*・ﾉｪ・) Recently, I'm studying English by watching the Queer Eye on Netflix.
