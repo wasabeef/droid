@@ -9,9 +9,9 @@ categories = ["command-line-utilities"]
 readme = "README.md"
 keywords = ["prompt", "shell", "bash", "fish", "zsh"]
 license = "MIT/Apache-2.0"
-description = "A command-line tool for checking Android OS version history written by Rust."
+description = "A command-line tool for checking Android OS version history."
 
-include = ["Cargo.toml", "src/**/*.rs", "resources/Android.json"]
+include = ["src/**/*.rs", "resources/Android.json"]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
