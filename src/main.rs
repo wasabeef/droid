@@ -52,7 +52,7 @@ fn main() {
         ("api", Some(sub_m)) => api_levels(sub_m.value_of("level").unwrap().to_string()),
         ("version", Some(sub_m)) => version_numbers(sub_m.value_of("number").unwrap().to_string()),
         ("code", Some(sub_m)) => code_names(sub_m.value_of("name").unwrap().to_string()),
-        _ => all()
+        _ => all(),
     }
 }
 
@@ -113,8 +113,8 @@ fn show_table(versions: Vec<Version>) {
                 Cell::new(&version.release_date),
             ]));
         }
-        print!("\n\n");
+        println!("\n");
         table.printstd();
-        print!("\n");
+        println!();
     }
 }
