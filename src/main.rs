@@ -96,24 +96,24 @@ fn read_versions() -> Vec<Version> {
 
 fn show_table(versions: Vec<Version>) {
     if versions.is_empty() {
-        println!("Not founded.")
-    } else {
-        // Create the table
-        let mut table = Table::new();
-
-        // Add a row per time
-        table.set_titles(row!["VERSION", "CODE_NAME", "API_LEVEL", "RELEASE_DATE"]);
-        table.set_format(*format::consts::FORMAT_NO_LINESEP_WITH_TITLE);
-        for version in versions.iter() {
-            table.add_row(Row::new(vec![
-                Cell::new(&version.version),
-                Cell::new(&version.code_name),
-                Cell::new(&version.api_level),
-                Cell::new(&version.release_date),
-            ]));
-        }
-        println!("\n");
-        table.printstd();
-        println!();
+        println!("\nNot founded.\n");
+        return;
     }
+
+    // Create the table
+    let mut table = Table::new();
+    // Add a row per time
+    table.set_titles(row!["VERSION", "CODE_NAME", "API_LEVEL", "RELEASE_DATE"]);
+    table.set_format(*format::consts::FORMAT_NO_LINESEP_WITH_TITLE);
+    for version in versions.iter() {
+        table.add_row(Row::new(vec![
+            Cell::new(&version.version),
+            Cell::new(&version.code_name),
+            Cell::new(&version.api_level),
+            Cell::new(&version.release_date),
+        ]));
+    }
+    println!("\n");
+    table.printstd();
+    println!();
 }
