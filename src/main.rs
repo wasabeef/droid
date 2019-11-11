@@ -58,18 +58,17 @@ fn main() {
 }
 
 fn all() {
-    body(read_versions());
+    show_table(read_versions());
 }
 
 fn api_levels(level: String) {
     let array = read_versions();
-    body(array.into_iter().filter(|v| v.api_level == level).collect())
+    show_table(array.into_iter().filter(|v| v.api_level == level).collect())
 }
 
 fn version_numbers(number: String) {
-    let array = read_versions();
-    body(
-        array
+    show_table(
+        read_versions()
             .into_iter()
             .filter(|v| v.version.starts_with(&number))
             .collect(),
@@ -77,9 +76,8 @@ fn version_numbers(number: String) {
 }
 
 fn code_names(number: String) {
-    let array = read_versions();
-    body(
-        array
+    show_table(
+        read_versions()
             .into_iter()
             .filter(|v| {
                 v.code_name
@@ -97,7 +95,7 @@ fn read_versions() -> Vec<Version> {
     serde_json::from_str(&contents).unwrap()
 }
 
-fn body(versions: Vec<Version>) {
+fn show_table(versions: Vec<Version>) {
     if versions.is_empty() {
         println!("Not founded.")
     } else {
@@ -117,8 +115,6 @@ fn body(versions: Vec<Version>) {
         }
         print!("\n\n");
         table.printstd();
+        print!("\n");
     }
-    println!("https://en.wikipedia.org/wiki/Android_version_history");
-    println!("https://developer.android.com/about/dashboards");
-    print!("\n\n");
 }
