@@ -1,6 +1,6 @@
 [package]
 name = "droid"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["wasabeef <dadadada.chop@gmail.com>"]
 edition = "2018"
 homepage = "https://github.com/wasabeef/droid"
@@ -10,8 +10,6 @@ readme = "README.md"
 keywords = ["prompt", "shell", "bash", "fish", "zsh"]
 license = "MIT/Apache-2.0"
 description = "A command-line tool for checking Android OS version history."
-
-include = ["src/**/*.rs", "resources/Android.json"]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

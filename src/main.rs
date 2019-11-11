@@ -7,7 +7,6 @@ use clap::{App, Arg, SubCommand};
 use prettytable::format;
 use prettytable::{Cell, Row, Table};
 use serde::Deserialize;
-use std::fs;
 
 #[derive(Deserialize, Debug)]
 struct Version {
@@ -53,7 +52,7 @@ fn main() {
         ("api", Some(sub_m)) => api_levels(sub_m.value_of("level").unwrap().to_string()),
         ("version", Some(sub_m)) => version_numbers(sub_m.value_of("number").unwrap().to_string()),
         ("code", Some(sub_m)) => code_names(sub_m.value_of("name").unwrap().to_string()),
-        _ => all(),
+        _ => all()
     }
 }
 
@@ -91,8 +90,9 @@ fn code_names(number: String) {
 }
 
 fn read_versions() -> Vec<Version> {
-    let contents = fs::read_to_string("resources/Android.json").unwrap();
-    serde_json::from_str(&contents).unwrap()
+    // FIXME
+    let url = "https://gist.githubusercontent.com/wasabeef/3c57b14d1ae7ddd26d95efeef911dbe9/raw/000e2aad7d2a4f70e38272fe34e5f32f823efbd6/Android.json".to_string();
+    reqwest::get(&url).unwrap().json().unwrap()
 }
 
 fn show_table(versions: Vec<Version>) {
