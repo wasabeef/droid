@@ -49,8 +49,8 @@ jobs:
         run: |
           cd target/${{ matrix.target }}/release
 
-          strip spt
-          tar czvf droid-${{ matrix.artifact_prefix }}.tar.gz spt
+          strip droid
+          tar czvf droid-${{ matrix.artifact_prefix }}.tar.gz droid
           shasum -a 256 droid-${{ matrix.artifact_prefix }}.tar.gz > droid-${{ matrix.artifact_prefix }}.sha256
       - name: Releasing assets
         uses: softprops/action-gh-release@v1
