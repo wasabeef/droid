@@ -3,11 +3,11 @@ extern crate prettytable;
 #[macro_use]
 extern crate clap;
 
-use std::fs;
-use serde::Deserialize;
-use prettytable::{Cell, Row, Table};
+use clap::{App, Arg, SubCommand};
 use prettytable::format;
-use clap::{Arg, App, SubCommand};
+use prettytable::{Cell, Row, Table};
+use serde::Deserialize;
+use std::fs;
 
 #[derive(Deserialize, Debug)]
 struct Version {
@@ -23,39 +23,37 @@ fn main() {
         .version(crate_version!())
         .author(crate_authors!())
         .after_help("https://github.com/wasabeef/droid")
-        .subcommand(SubCommand::with_name("list")
-            .about("List all Android version history.")
-            .alias("ls")
+        .subcommand(
+            SubCommand::with_name("list")
+                .about("List all Android version history.")
+                .alias("ls"),
         )
-        .subcommand(SubCommand::with_name("api")
-            .alias("a")
-            .about("List the specified API level.")
-            .arg(Arg::with_name("level").required(true))
+        .subcommand(
+            SubCommand::with_name("api")
+                .alias("a")
+                .about("List the specified API level.")
+                .arg(Arg::with_name("level").required(true)),
         )
-        .subcommand(SubCommand::with_name("version")
-            .alias("v")
-            .about("List the specified version number.")
-            .arg(Arg::with_name("number").required(true))
+        .subcommand(
+            SubCommand::with_name("version")
+                .alias("v")
+                .about("List the specified version number.")
+                .arg(Arg::with_name("number").required(true)),
         )
-        .subcommand(SubCommand::with_name("code")
-            .alias("c")
-            .about("List the specified code name.")
-            .arg(Arg::with_name("name").required(true))
+        .subcommand(
+            SubCommand::with_name("code")
+                .alias("c")
+                .about("List the specified code name.")
+                .arg(Arg::with_name("name").required(true)),
         )
         .get_matches();
 
     match matches.subcommand() {
         ("list", _) => all(),
-        ("api", Some(sub_m)) => {
-            api_levels(sub_m.value_of("level").unwrap().to_string())
-        }
-        ("version", Some(sub_m)) => {
-            version_numbers(sub_m.value_of("number").unwrap().to_string())
-        }
-        ("code", Some(sub_m)) => {
-            code_names(sub_m.value_of("name").unwrap().to_string())
-        }
-        _ => all()
+        ("api", Some(sub_m)) => api_levels(sub_m.value_of("level").unwrap().to_string()),
+        ("version", Some(sub_m)) => version_numbers(sub_m.value_of("number").unwrap().to_string()),
+        ("code", Some(sub_m)) => code_names(sub_m.value_of("name").unwrap().to_string()),
+        _ => all(),
     }
 }
 
@@ -70,14 +68,28 @@ fn api_levels(level: String) {
 
 fn version_numbers(number: String) {
     let array = read_versions();
-    body(array.into_iter().filter(|v| v.version.starts_with(&number)).collect())
+    body(
+        array
+            .into_iter()
+            .filter(|v| v.version.starts_with(&number))
+            .collect(),
+    )
 }
 
 fn code_names(number: String) {
     let array = read_versions();
-    body(array.into_iter().filter(|v|
-        v.code_name.to_lowercase().split_whitespace().collect::<String>().starts_with(&number.to_lowercase())
-    ).collect())
+    body(
+        array
+            .into_iter()
+            .filter(|v| {
+                v.code_name
+                    .to_lowercase()
+                    .split_whitespace()
+                    .collect::<String>()
+                    .starts_with(&number.to_lowercase())
+            })
+            .collect(),
+    )
 }
 
 fn read_versions() -> Vec<Version> {
@@ -100,7 +112,7 @@ fn body(versions: Vec<Version>) {
                 Cell::new(&version.version),
                 Cell::new(&version.code_name),
                 Cell::new(&version.api_level),
-                Cell::new(&version.release_date)
+                Cell::new(&version.release_date),
             ]));
         }
         print!("\n\n");
