@@ -19,6 +19,8 @@
 <h4 align="center">
   <br />
   <a href="#installation">Installation</a>
+  -
+  <a href="#usage">Usage</a>
 </h4>
 
 <h1></h1>
