@@ -1,6 +1,6 @@
 <p align="center">
   <br /><img
-    width="400"
+    width="75%"
     src="https://raw.githubusercontent.com/wasabeef/droid/master/media/logo.png"
     alt="droid – Logo"/>
 </p>
