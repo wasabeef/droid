@@ -19,7 +19,7 @@ struct Version {
 
 fn main() {
     let matches = App::new("droid")
-        .about("A command-line tool for checking Android OS version history.")
+        .about("A command-line tool for checking Android OS version history written by Rust.")
         .version(crate_version!())
         .author(crate_authors!())
         .after_help("https://github.com/wasabeef/droid")
