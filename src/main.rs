@@ -91,7 +91,8 @@ fn code_names(number: String) {
 
 fn read_versions() -> Vec<Version> {
     let url = "https://raw.githubusercontent.com/wasabeef/droid/master/resources/Android.json";
-    reqwest::get(&url.to_string()).unwrap().json().unwrap()
+    let mut response = reqwest::get(&url.to_string()).unwrap();
+    response.json().unwrap()
 }
 
 fn show_table(versions: Vec<Version>) {
