@@ -9,6 +9,7 @@ categories = ["command-line-utilities"]
 readme = "README.md"
 keywords = ["prompt", "shell", "bash", "fish", "zsh"]
 license = "MIT/Apache-2.0"
+description = "A command-line tool for checking Android OS version history written by Rust."
 
 include = ["Cargo.toml", "src/**/*.rs", "resources/Android.json"]
 
