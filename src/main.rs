@@ -97,7 +97,7 @@ fn read_versions() -> Vec<Version> {
 
 fn show_table(versions: Vec<Version>) {
     if versions.is_empty() {
-        println!("\nNot founded.\n");
+        println!("\nNot found.\n");
         return;
     }
 
