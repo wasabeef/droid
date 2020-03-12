@@ -4,8 +4,8 @@ extern crate clap;
 extern crate prettytable;
 
 use clap::{App, Arg, SubCommand};
-use prettytable::{Cell, Row, Table};
 use prettytable::format;
+use prettytable::{Cell, Row, Table};
 use serde::Deserialize;
 
 #[derive(Deserialize, Debug)]
@@ -92,19 +92,14 @@ fn code_names(number: String) {
 fn read_versions() -> Vec<Version> {
     let response = do_read_versions();
     match response {
-        Ok(versions) => {
-            versions
-        }
-        Err(_) => {
-            vec![]
-        }
+        Ok(versions) => versions,
+        Err(_) => vec![],
     }
 }
 
 fn do_read_versions() -> Result<Vec<Version>, Box<dyn std::error::Error>> {
     let url = "https://raw.githubusercontent.com/wasabeef/droid/master/resources/Android.json";
-    let response = reqwest::blocking::get(&url.to_string())?
-        .json::<Vec<Version>>()?;
+    let response = reqwest::blocking::get(&url.to_string())?.json::<Vec<Version>>()?;
     Ok(response)
 }
 
