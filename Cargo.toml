@@ -1,6 +1,6 @@
 [package]
 name = "droid"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["wasabeef <dadadada.chop@gmail.com>"]
 edition = "2018"
 homepage = "https://github.com/wasabeef/droid"
