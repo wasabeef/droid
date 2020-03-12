@@ -14,10 +14,10 @@ description = "A command-line tool for checking Android OS version history."
 exclude = ["media/**/*", "resources/**/*"]
 
 [dependencies]
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = "1.0.48"
 prettytable-rs = "^0.8"
-reqwest = { version = "0.10", features = ["blocking", "json"] }
+reqwest = { version = "0.10.4", features = ["blocking", "json"] }
 clap = "2.33.0"
 
 [[bin]]
