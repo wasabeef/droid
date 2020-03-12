@@ -1,11 +1,11 @@
 #[macro_use]
-extern crate prettytable;
-#[macro_use]
 extern crate clap;
+#[macro_use]
+extern crate prettytable;
 
 use clap::{App, Arg, SubCommand};
-use prettytable::format;
 use prettytable::{Cell, Row, Table};
+use prettytable::format;
 use serde::Deserialize;
 
 #[derive(Deserialize, Debug)]
@@ -90,9 +90,22 @@ fn code_names(number: String) {
 }
 
 fn read_versions() -> Vec<Version> {
+    let response = do_read_versions();
+    match response {
+        Ok(versions) => {
+            versions
+        }
+        Err(_) => {
+            vec![]
+        }
+    }
+}
+
+fn do_read_versions() -> Result<Vec<Version>, Box<dyn std::error::Error>> {
     let url = "https://raw.githubusercontent.com/wasabeef/droid/master/resources/Android.json";
-    let mut response = reqwest::get(&url.to_string()).unwrap();
-    response.json().unwrap()
+    let response = reqwest::blocking::get(&url.to_string())?
+        .json::<Vec<Version>>()?;
+    Ok(response)
 }
 
 fn show_table(versions: Vec<Version>) {
