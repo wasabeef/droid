@@ -3,384 +3,448 @@
         "api_level": "1",
         "version": "1.0",
         "code_name": "Alpha",
-        "release_date": "2008-09-23"
+        "release_date": "2008-09-23",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "2",
         "version": "1.1",
         "code_name": "Beta",
-        "release_date": "2009-02-09"
+        "release_date": "2009-02-09",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "3",
         "version": "1.5",
         "code_name": "Cupcake",
-        "release_date": "2009-04-27"
+        "release_date": "2009-04-27",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "4",
         "version": "1.6",
         "code_name": "Donut",
-        "release_date": "2009-09-15"
+        "release_date": "2009-09-15",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "5",
         "version": "2.0",
         "code_name": "Eclair",
-        "release_date": "2009-10-26"
+        "release_date": "2009-10-26",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "6",
         "version": "2.0.1",
         "code_name": "Eclair",
-        "release_date": "2009-12-03"
+        "release_date": "2009-12-03",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "7",
         "version": "2.1",
         "code_name": "Eclair",
-        "release_date": "2010-01-12"
+        "release_date": "2010-01-12",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "8",
         "version": "2.2",
         "code_name": "Froyo",
-        "release_date": "2010-03-20"
+        "release_date": "2010-03-20",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "8",
         "version": "2.2.1",
         "code_name": "Froyo",
-        "release_date": "2011-01-18"
+        "release_date": "2011-01-18",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "8",
         "version": "2.2.2",
         "code_name": "Froyo",
-        "release_date": "2011-01-22"
+        "release_date": "2011-01-22",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "8",
         "version": "2.2.3",
         "code_name": "Froyo",
-        "release_date": "2011-11-21"
+        "release_date": "2011-11-21",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "9",
         "version": "2.3",
         "code_name": "Gingerbread",
-        "release_date": "2010-12-06"
+        "release_date": "2010-12-06",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "9",
         "version": "2.3.1",
         "code_name": "Gingerbread",
-        "release_date": "2010-12"
+        "release_date": "2010-12",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "9",
         "version": "2.3.2",
         "code_name": "Gingerbread",
-        "release_date": "2011-01"
+        "release_date": "2011-01",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "10",
         "version": "2.3.3",
         "code_name": "Gingerbread",
-        "release_date": "2011-02-09"
+        "release_date": "2011-02-09",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "10",
         "version": "2.3.4",
         "code_name": "Gingerbread",
-        "release_date": "2011-04-28"
+        "release_date": "2011-04-28",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "10",
         "version": "2.3.5",
         "code_name": "Gingerbread",
-        "release_date": "2011-07-25"
+        "release_date": "2011-07-25",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "10",
         "version": "2.3.6",
         "code_name": "Gingerbread",
-        "release_date": "2011-09-02"
+        "release_date": "2011-09-02",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "10",
         "version": "2.3.7",
         "code_name": "Gingerbread",
-        "release_date": "2011-09-21"
+        "release_date": "2011-09-21",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "11",
         "version": "3.0",
         "code_name": "Honeycomb",
-        "release_date": "2011-02-22"
+        "release_date": "2011-02-22",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "12",
         "version": "3.1",
         "code_name": "Honeycomb",
-        "release_date": "2011-03-10"
+        "release_date": "2011-03-10",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2",
         "code_name": "Honeycomb",
-        "release_date": "2011-07-15"
+        "release_date": "2011-07-15",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2.1",
         "code_name": "Honeycomb",
-        "release_date": "2011-11-20"
+        "release_date": "2011-11-20",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2.2",
         "code_name": "Honeycomb",
-        "release_date": "2011-08-30"
+        "release_date": "2011-08-30",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2.3",
         "code_name": "Honeycomb",
-        "release_date": "2011-08-30"
+        "release_date": "2011-08-30",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2.4",
         "code_name": "Honeycomb",
-        "release_date": "2011-12"
+        "release_date": "2011-12",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2.5",
         "code_name": "Honeycomb",
-        "release_date": "2012-01"
+        "release_date": "2012-01",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "13",
         "version": "3.2.6",
         "code_name": "Honeycomb",
-        "release_date": "2012-12"
+        "release_date": "2012-12",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "14",
         "version": "4.0",
         "code_name": "Ice Cream Sandwich",
-        "release_date": "2011-10-18"
+        "release_date": "2011-10-18",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "14",
         "version": "4.0.1",
         "code_name": "Ice Cream Sandwich",
-        "release_date": "2011-10-21"
+        "release_date": "2011-10-21",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "14",
         "version": "4.0.2",
         "code_name": "Ice Cream Sandwich",
-        "release_date": "2011-11-28"
+        "release_date": "2011-11-28",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "15",
         "version": "4.0.3",
         "code_name": "Ice Cream Sandwich",
-        "release_date": "2011-12-16"
+        "release_date": "2011-12-16",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "15",
         "version": "4.0.4",
         "code_name": "Ice Cream Sandwich",
-        "release_date": "2012-03-29"
+        "release_date": "2012-03-29",
+        "distribution": "< 0.3%"
     },
     {
         "api_level": "16",
         "version": "4.1",
         "code_name": "Jelly Bean",
-        "release_date": "2012-07-09"
+        "release_date": "2012-07-09",
+        "distribution": "< 1.2%"
     },
     {
         "api_level": "16",
         "version": "4.1.1",
         "code_name": "Jelly Bean",
-        "release_date": "2012-07-11"
+        "release_date": "2012-07-11",
+        "distribution": "< 1.2%"
     },
     {
         "api_level": "16",
         "version": "4.1.2",
         "code_name": "Jelly Bean",
-        "release_date": "2012-10-09"
+        "release_date": "2012-10-09",
+        "distribution": "< 1.2%"
     },
     {
         "api_level": "17",
         "version": "4.2",
         "code_name": "Jelly Bean",
-        "release_date": "2012-11-13"
+        "release_date": "2012-11-13",
+        "distribution": "< 1.5%"
     },
     {
         "api_level": "17",
         "version": "4.2.1",
         "code_name": "Jelly Bean",
-        "release_date": "2012-11-27"
+        "release_date": "2012-11-27",
+        "distribution": "< 1.5%"
     },
     {
         "api_level": "17",
         "version": "4.2.2",
         "code_name": "Jelly Bean",
-        "release_date": "2013-02-11"
+        "release_date": "2013-02-11",
+        "distribution": "< 1.5%"
     },
     {
         "api_level": "18",
         "version": "4.3",
         "code_name": "Jelly Bean",
-        "release_date": "2013-07-24"
+        "release_date": "2013-07-24",
+        "distribution": "0.5%"
     },
     {
         "api_level": "18",
         "version": "4.3.1",
         "code_name": "Jelly Bean",
-        "release_date": "2013-10-03"
+        "release_date": "2013-10-03",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "19",
         "version": "4.4",
         "code_name": "KitKat",
-        "release_date": "2013-10-31"
+        "release_date": "2013-10-31",
+        "distribution": "6.9%"
     },
     {
         "api_level": "19",
         "version": "4.4.1",
         "code_name": "KitKat",
-        "release_date": "2013-12-05"
+        "release_date": "2013-12-05",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "19",
         "version": "4.4.2",
         "code_name": "KitKat",
-        "release_date": "2013-12-09"
+        "release_date": "2013-12-09",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "19",
         "version": "4.4.3",
         "code_name": "KitKat",
-        "release_date": "2014-06-02"
+        "release_date": "2014-06-02",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "19",
         "version": "4.4.4",
         "code_name": "KitKat",
-        "release_date": "2014-06-19"
+        "release_date": "2014-06-19",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "20",
         "version": "4.4W",
         "code_name": "KitKat, with wearable extensions",
-        "release_date": "2014-06-25"
+        "release_date": "2014-06-25",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "20",
         "version": "4.4W.1",
         "code_name": "KitKat, with wearable extensions",
-        "release_date": "2014-09-06"
+        "release_date": "2014-09-06",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "20",
         "version": "4.4W.2",
         "code_name": "KitKat, with wearable extensions",
-        "release_date": "2014-10-21"
+        "release_date": "2014-10-21",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "21",
         "version": "5.0",
         "code_name": "Lollipop",
-        "release_date": "2014-11-12"
+        "release_date": "2014-11-12",
+        "distribution": "3.0%"
     },
     {
         "api_level": "21",
         "version": "5.0.1",
         "code_name": "Lollipop",
-        "release_date": "2014-12-02"
+        "release_date": "2014-12-02",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "21",
         "version": "5.0.2",
         "code_name": "Lollipop",
-        "release_date": "2014-12-19"
+        "release_date": "2014-12-19",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "22",
         "version": "5.1",
         "code_name": "Lollipop",
-        "release_date": "2015-03-09"
+        "release_date": "2015-03-09",
+        "distribution": "11.5%"
     },
     {
         "api_level": "22",
         "version": "5.1.1",
         "code_name": "Lollipop",
-        "release_date": "2015-04-21"
+        "release_date": "2015-04-21",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "23",
         "version": "6.0",
         "code_name": "Marshmallow",
-        "release_date": "2015-10-05"
+        "release_date": "2015-10-05",
+        "distribution": "16.9%"
     },
     {
         "api_level": "23",
         "version": "6.0.1",
         "code_name": "Marshmallow",
-        "release_date": "2015-12-07"
+        "release_date": "2015-12-07",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "24",
         "version": "7.0",
         "code_name": "Nougat",
-        "release_date": "2016-08-22"
+        "release_date": "2016-08-22",
+        "distribution": "11.4%"
     },
     {
         "api_level": "25",
         "version": "7.1",
         "code_name": "Nougat",
-        "release_date": "2016-10-04"
+        "release_date": "2016-10-04",
+        "distribution": "7.8%"
     },
     {
         "api_level": "25",
         "version": "7.1.1",
         "code_name": "Nougat",
-        "release_date": "2016-12-05"
+        "release_date": "2016-12-05",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "25",
         "version": "7.1.2",
         "code_name": "Nougat",
-        "release_date": "2017-04-04"
+        "release_date": "2017-04-04",
+        "distribution": "< 0.1%"
     },
     {
         "api_level": "26",
         "version": "8.0",
         "code_name": "Oreo",
-        "release_date": "2017-08-21"
+        "release_date": "2017-08-21",
+        "distribution": "12.9%"
     },
     {
         "api_level": "27",
         "version": "8.1.0",
         "code_name": "Oreo",
-        "release_date": "2017-12-05"
+        "release_date": "2017-12-05",
+        "distribution": "15.4%"
     },
     {
         "api_level": "28",
         "version": "9",
         "code_name": "Pie",
-        "release_date": "2018-08-06"
+        "release_date": "2018-08-06",
+        "distribution": "10.4%"
     },
     {
         "api_level": "29",
         "version": "10",
         "code_name": "10",
-        "release_date": "2019-09-03"
+        "release_date": "2019-09-03",
+        "distribution": "< 0.1%"
     }
 ]
