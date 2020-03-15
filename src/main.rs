@@ -14,6 +14,7 @@ struct Version {
     code_name: String,
     api_level: String,
     release_date: String,
+    distribution: String,
 }
 
 fn main() {
@@ -112,7 +113,13 @@ fn show_table(versions: Vec<Version>) {
     // Create the table
     let mut table = Table::new();
     // Add a row per time
-    table.set_titles(row!["VERSION", "CODE_NAME", "API_LEVEL", "RELEASE_DATE"]);
+    table.set_titles(row![
+        "VERSION",
+        "CODE_NAME",
+        "API_LEVEL",
+        "RELEASE_DATE",
+        "DISTRIBUTION"
+    ]);
     table.set_format(*format::consts::FORMAT_NO_LINESEP_WITH_TITLE);
     for version in versions.iter() {
         table.add_row(Row::new(vec![
@@ -120,6 +127,7 @@ fn show_table(versions: Vec<Version>) {
             Cell::new(&version.code_name),
             Cell::new(&version.api_level),
             Cell::new(&version.release_date),
+            Cell::new(&version.distribution),
         ]));
     }
     println!("\n");
