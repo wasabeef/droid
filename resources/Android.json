@@ -382,5 +382,11 @@
         "version": "10",
         "code_name": "10",
         "release_date": "2019-09-03"
+    },
+    {
+        "api_level": "30",
+        "version": "11",
+        "code_name": "11",
+        "release_date": "2020-09-08"
     }
 ]
