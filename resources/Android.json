@@ -380,13 +380,19 @@
     {
         "api_level": "29",
         "version": "10",
-        "code_name": "10",
+        "code_name": "Q",
         "release_date": "2019-09-03"
     },
     {
         "api_level": "30",
         "version": "11",
-        "code_name": "11",
+        "code_name": "R",
         "release_date": "2020-09-08"
+    },
+    {
+        "api_level": "31",
+        "version": "12",
+        "code_name": "S",
+        "release_date": "2021-10-20"
     }
 ]
