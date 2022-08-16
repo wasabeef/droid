@@ -394,5 +394,17 @@
         "version": "12",
         "code_name": "S",
         "release_date": "2021-10-20"
+    },
+    {
+        "api_level": "32",
+        "version": "12L",
+        "code_name": "Sv2",
+        "release_date": "2022-03-07"
+    },
+    {
+        "api_level": "33",
+        "version": "13",
+        "code_name": "Tiramisu",
+        "release_date": "2022-08-15"
     }
 ]
